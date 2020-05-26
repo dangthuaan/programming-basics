@@ -1,4 +1,4 @@
-# OOP Basics
+# OOP Basics \#1
 
 ## OOP \#1: Class, Object, Method, Property
 
@@ -92,34 +92,34 @@ class Car {
 }
  
 // Create an instance
-$bmw = new Car ();
-$mercedes = new Car ();
+$bmw = new Car();
+$mercedes = new Car();
  
 // Get the values
-echo $bmw -> color; // beige
+echo $bmw->color; // beige
 echo "<br />";
-echo $mercedes -> color; // beige
+echo $mercedes->color; // beige
 echo "<hr />";
  
 // Set the values
-$bmw -> color = 'blue';
-$bmw -> comp = "BMW";
-$mercedes -> comp = "Mercedes Benz";
+$bmw->color = 'blue';
+$bmw->comp = "BMW";
+$mercedes->comp = "Mercedes Benz";
  
 // Get the values again
-echo $bmw -> color; // blue
+echo $bmw->color; // blue
 echo "<br />";
-echo $mercedes -> color; // beige
+echo $mercedes->color; // beige
 echo "<br />";
-echo $bmw -> comp; // BMW
+echo $bmw->comp; // BMW
 echo "<br />";
-echo $mercedes -> comp; // Mercedes Benz
+echo $mercedes->comp; // Mercedes Benz
 echo "<hr />";
  
 // Use the methods to get a beep
-echo $bmw -> hello(); // beep
+echo $bmw->hello(); // beep
 echo "<br />";
-echo $mercedes -> hello(); // beep
+echo $mercedes->hello(); // beep
 ```
 
 #### 2.4. Remember
@@ -128,5 +128,14 @@ echo $mercedes -> hello(); // beep
 >
 > Although the objects share the same code, they can behave differently because they can have different values assigned to them.
 
-####  
+#### 3. $this keyword
+
+> The $this keyword indicates that we use the class's own methods and properties, and allows us to have access to them within the class's scope.
+
+The $this keyword allows us to approach the class properties and methods from within the class using the following syntax:
+
+```php
+ $this->propertyName; 
+ $this->methodName();
+```
 
